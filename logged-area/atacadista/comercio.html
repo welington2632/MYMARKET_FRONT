@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="info-comercio">
+        <h3>Comércio</h3>
+        <hr>
+        <h4>Produtos</h4>
+        <input type="button" value="Novo">
+        <input type="button" value="Listar">
+
+        <div id="cadastro-produto">
+            <h3>Cadastro de produto</h3>
+            <form action="" id="cadastro-produto">
+                <label for="nome-produto">Nome</label> <input type="text" name="nome" id="nome-produto">
+                <br>
+                <label for="descricao-produto">Descrição</label> <input type="text" name="descricao" id="descricao-produto">
+                <br>
+                <label for="valor-produto">Valor</label> <input type="text" name="valor" id="valor-produto">
+                <br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+
+    <div id="lista-produto" style="display: none;">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                </tr>
+                <tr>
+                    <td>teste</td>
+                    <td><a href="">Editar</a></td>
+                    <td><a href="">Excluir</a></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <br>
+        <a href="../atacadista/panel.html"><input type="button" value="Voltar"></a>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/comercio.js"></script>
+</body>
+</html>

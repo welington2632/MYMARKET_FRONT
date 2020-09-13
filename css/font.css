@@ -1,0 +1,45 @@
+/*
+BEM
+B - Block: Div, Form, Input
+E - Element: a, b, span, h1, p...
+M - Modifier: warning, active, inative...
+*/
+
+/* Cor de fontes */
+.white{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.green {
+    color: rgb(54, 138, 127);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.black {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.low-opc {
+    opacity: 0.6;
+}
+
+/* Tamanho de fontes */
+
+.ssm {
+    font-size: 0.8rem;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 1.2rem;
+}
+
+.lg{
+    font-size: 2.5rem;
+}
+

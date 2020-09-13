@@ -1,0 +1,24 @@
+.form-cadastro, .form-editar {
+    width: 50%;
+    margin: 25px auto;
+}
+
+.table td, .table th {
+    font-weight: 400;
+}
+
+#editar {
+    color: #5d6564;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: .8rem;
+}
+
+#excluir {
+    color: #e97171;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: .8rem;
+}

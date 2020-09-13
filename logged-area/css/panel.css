@@ -1,0 +1,82 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h3 {
+    margin: auto;
+    display: table;
+}
+
+.form-cadastro {
+    display: none;
+}
+
+.listagem-atacaditas {
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listagem-atacaditas h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.listagem-atacaditas ul > li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.listagem-atacaditas ul > li i {
+    padding: 15px;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid black;
+}
+
+.listagem-atacaditas ul {
+    padding: 10px;
+    width: 100%;
+}
+
+.produto-detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-produto {
+    width: 50%;
+}
+
+.item-user {
+    display: block;
+
+}
+
+.carrinho-icon {
+    font-size: 1.5rem;
+    color: black;
+}
+
+#adicionar-carrinho {
+    display: none;
+}
+
+.card-body-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+

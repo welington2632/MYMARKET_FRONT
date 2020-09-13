@@ -1,0 +1,73 @@
+.button-green-outline {
+    margin: 10px auto;
+    width: 80%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    border: 1px solid rgb(54, 138, 127);
+}
+
+.button-green-outline-br {
+    margin: 10px auto;
+    width: 80%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    border: 1px solid rgb(54, 138, 127);
+    border-radius: 10px;
+}
+
+.button-green {
+    margin: 10px auto;
+    width: 80%;
+    height: 30px;
+    background-color: rgb(54, 138, 127);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    border: none;
+    transition: width 0.3s;
+}
+
+.button-green:hover, .button-green:active {
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(54, 138, 127);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.button-green-br {
+    margin: 10px auto;
+    width: 80%;
+    height: 30px;
+    background-color: rgb(54, 138, 127);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    transition: width 0.3s;
+
+}
+
+.button-green-br:hover, .button-green-br:active {
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(54, 138, 127);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
