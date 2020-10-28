@@ -1,56 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/panel.css">
-</head>
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="../css/varejista.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">MyMarket</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Produtos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./produtos/cadastro.html">Cadastrar</a>
-                <a class="dropdown-item" href="./produtos/listar.html">Listar</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Relatórios</a>
-            </li>
+    <header>
+        <div class="head-container">
+            <a href="./panel.html" id="logo"> <img src="../../img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <div class="right-infos">
+                <span class="perfil-infos">
+                    Bem vindo, <b>Welington</b>
+                  </span>
+            </div>
+
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./panel.html" class="menu-active">DASHBOARD</a></li>
+            <li><a href="#">GERENCIAR PRODUTOS</a></li>
           </ul>
         </div>
-      </nav>
-
-
-    <!--SCRIPTS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    </header>
+    <main>
+        <div class="horizontal-flex">
+            <section class="info" id="ultimas-vendas">
+                <h3>Últimas vendas</h3>
+                <div class="itens">
+                    <div class="card">
+                        <span class="status" id="aguardando">Aguardando Aprovação</span>
+                        <span class="date">26/10/2020 - 15:02</span>
+                        <div class="card-split">
+                            <div>
+                                <span class="info-item" id="id">ID: 02</span>
+                                <span class="info-item" id="comprador">Comprador: Welington Martins</span>
+                                <span class="info-item" id="valor">Valor: R$ 150,00</span>
+                                <span class="info-item" id="endereco">Endereço: Av.Francisco Rodrigues Filho, 1952 - 08773380 Mogi das Cruzes, SP</span>
+                                <span class="info-item" id="quantidade">Quantidade de produtos: 3</span>
+                            </div>
+                            <button class="more-info"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="status" id="analise">Em análise bancária</span>
+                        <span class="date">26/10/2020 - 15:02</span>
+                        <div class="card-split">
+                            <div>
+                                <span class="info-item" id="id">ID: 02</span>
+                                <span class="info-item" id="comprador">Comprador: Welington Martins</span>
+                                <span class="info-item" id="valor">Valor: R$ 150,00</span>
+                                <span class="info-item" id="endereco">Endereço: Av.Francisco Rodrigues Filho, 1952 - 08773380 Mogi das Cruzes, SP</span>
+                                <span class="info-item" id="quantidade">Quantidade de produtos: 3</span>
+                            </div>
+                            <button class="more-info"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info" id="ultimas-avaliacoes">
+                <h3>Últimas avaliações</h3>
+                <div class="itens">
+                    <div class="avaliacao">
+                        <div class="stars">
+                            <i class="fas fa-star check"></i>
+                            <i class="fas fa-star check"></i>
+                            <i class="fas fa-star check"></i>
+                            <i class="fas fa-star check"></i>
+                            <i class="fas fa-star "></i>
+                            <span class="star-value">(4/5)</span>
+                        </div>
+                        <span class="nome">Ricardo de Vieira Machado</span>
+                        <span class="data">26/10/2020</span>
+                        <span class="mensagem">“Produto chegou no tempo estimado, muito bom!”</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+    </footer>
     <script src="../../js/jquery.js"></script>
-    <script src="../../js/panel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+       // $('section#tipos-em-alta').slick()
+    </script>
 </body>
 
 </html>

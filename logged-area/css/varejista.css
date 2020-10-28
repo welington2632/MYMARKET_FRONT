@@ -1,0 +1,313 @@
+html, body {
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    flex: 1;
+}
+
+header {
+    background-color: #ff613f;
+    padding-top: 10px;
+}
+
+main {
+    flex: 1;
+    margin: 30px auto;
+    width: 80%;
+    position: relative;
+}
+
+input:focus, select:focus {
+    outline: none!important;
+}
+
+.head-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.perfil-infos :after {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+    cursor: pointer;
+}
+.right-infos {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.right-infos i {
+    color: white;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.right-infos > a {
+    text-decoration: none;
+}
+.head-container img {
+    width: 50%;
+}
+i:before {
+    font-family: 'FontAwesome';
+}
+footer {
+    width: 100%;
+    padding: 25px 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer > div p {
+    margin: 0;
+}
+
+.menu > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    background: black;
+    padding: 5px 0;
+}
+
+.menu > ul li {
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.menu > ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.menu-active {
+    font-weight: bold;
+}
+
+.horizontal-flex {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info {
+    width: 45%;
+}
+
+.info > h3 {
+    color: #0099FF;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28px;
+}
+.info > .itens {
+    background-color: #F2F2F2;
+    padding: 15px;
+}
+
+.itens .avaliacao {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+}
+
+.info .card {
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.info .card .status {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.status#analise {
+    color: #FFB800;
+}
+.status#aguardando {
+    color: #00C2FF;
+}
+.info .card .card-split {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.info .card .card-split > div {
+    width: 60%;
+}
+.info .card .date {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #939393;
+    opacity: .5;
+}
+.info .card .info-item {
+    display: block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #939393;
+    opacity: .8;
+}
+.info .card .card-split button {
+    background-color: #0099FF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+}
+i {
+    font-style: normal;
+}
+.stars .fa-star {
+    color: #DDDDDD;
+}
+
+.stars .fa-star.check {
+    color: #FFB800;
+}
+.nome {
+    color: #939393;
+    font-weight: bold;
+}
+.star-value, .data {
+    color: #939393;
+    opacity: .8;
+}
+.mensagem {
+    color: #939393;
+    opacity: .8;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.produto-id {
+    color: #0099FF;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0;
+}
+
+main#produto .horizontal-flex > section {
+    width: 45%;
+}
+
+.detalhes-produto .product-info {
+    margin: 25px auto;
+    width: 100%;
+}
+
+.detalhes-produto .product-info span {
+    color: #0099FF;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.detalhes-produto .product-info input, .detalhes-produto .product-info textarea {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.detalhes-produto .product-info input#endereco {
+    height: 60px;
+}
+
+a.voltar {
+    color: #0099FF;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.detalhes-produto button{
+    width: 100%;
+    padding: 15px 0;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.detalhes-produto button#AprovarPedido {
+    background-color: #0099FF;
+    color: white;
+}
+
+.detalhes-produto button#RejeitarPedido {
+    background-color: #BC5757;
+    color: white;
+}
+
+.listagem-produtos > h3 {
+    color: #0099FF;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.listagem-produtos > .box {
+    background-color: #F2F2F2;
+}
+.listagem-produtos .box .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.listagem-produtos .box .card .quantidade {
+    color: #0099FF;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.listagem-produtos .box .card .infos-basicas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}

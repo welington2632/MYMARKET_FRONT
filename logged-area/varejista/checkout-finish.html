@@ -29,33 +29,22 @@
           </ul>
         </div>
     </header>
-    <main>
-           <section id="pesquisa">
-               <h4>Comece pesquisando pelo tipo de produto que atende seu modelo de negócio!</h4>
-               <div>
-                <input type="text" placeholder="Pesquise o tipo do seu produto aqui!">
-                <script>
-                    function teste () {
-                        window.location = 'resultado.html'
-                    }
-                </script>
-               <i class="fas fa-search" onclick="teste()"></i>
-               </div>
-               
-           </section>
-           <section id="tipos-em-alta">
-               <h4>
-                   Tipos em alta
-               </h4>
-               <ul>
-                   <li><a href="#">Teste</a></li>
-                   <li><a href="#">Teste 1</a></li>
-                   <li><a href="#">Teste 2</a></li>
-                   <li><a href="#">Teste 3</a></li>
-                   <li><a href="#">Teste 4</a></li>
-               </ul>
-
-           </section>
+    <main id="checkout-finish">
+        <h4>Pedido realizado com sucesso!</h4>
+        <img src="../../img/checked.svg" alt="check">
+        <h3>Obrigado por confiar no MyMarket, você comprou os seguintes itens :</h3>
+        <div class="info-products">
+            <div class="horizontal-spot">
+                <img src="../../img/cadeira.png" alt="cadeira.png">
+                <div>
+                    <h3 class="product-name">Cadeira gamer rx 21</h3>
+                    <span class="quantity">Quantidade: 2</span>
+                    <span class="price">R$ 50,00</span>
+                </div>
+            </div>
+        </div>
+        <h3 class="total">TOTAL : R$ 150,00</h3>
+        <button id="voltar-home">Voltar para a home</button>
     </main>
     <footer>
         <div class="container-footer">

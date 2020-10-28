@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="../css/varejista.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <a href="./panel.html" id="logo"> <img src="../../img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <div class="right-infos">
+                <span class="perfil-infos">
+                    Bem vindo, <b>Welington</b>
+                  </span>
+            </div>
+
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./panel.html" class="menu-active">DASHBOARD</a></li>
+            <li><a href="#">GERENCIAR PRODUTOS</a></li>
+          </ul>
+        </div>
+    </header>
+    <main id="produto">
+        <a href="./panel.html" class="voltar"><i class="fas fa-arrow-left"></i></a>
+        <div class="horizontal-flex">
+           <section class="detalhes-produto">
+               <h3 class="produto-id">Pedido ID: 02</h3>
+               <span class="data">26/10/2020</span>
+               <div class="product-info">
+                   <span class="item-title">
+                    <i class="fas fa-user"></i>
+                    Dados do comprador
+                   </span>
+                   <input type="text" name="nome" id="nome" value="Ricardo de Vieira machado" disabled>
+               </div>
+               <div class="product-info">
+                <span class="item-title">
+                <i class="fas fa-home"></i>
+                 Endereço
+                </span>
+                <textarea id="endereco" name="endereco" rows="4" cols="50" disabled>Av.Francisco Rodrigues Filho, 1952 Casa 31 - 08773380 Mogi das Cruzes, SP
+                </textarea>
+            </div>
+            <div class="product-info">
+                <span class="item-title">
+                <i class="fab fa-wpforms"></i>
+                 Pedido
+                </span>
+                <input type="text" name="pedido" id="pedido" value="Aguardando aprovação" disabled>
+            </div>
+            <button id="AprovarPedido">Aprovar pedido</button>
+            <button id="RejeitarPedido">Rejeitar pedido</button>
+           </section>
+           <section class="listagem-produtos">
+               <h3>Produtos</h3>
+               <div class="box">
+                   <div class="card">
+                        <h4 class="quantidade">1</h4>
+                        <img src="../../img/cadeira.png" alt="cadeira.png">
+                        <div class="infos-basicas">
+                            <span class="nome-produto">Panela de pressão v2</span>
+                            <span class="valor">R$ 50,00</span>
+                        </div>
+                   </div>
+                   <div class="card">
+                    <h4 class="quantidade">3</h4>
+                    <img src="../../img/cadeira.png" alt="cadeira.png">
+                    <div class="infos-basicas">
+                        <span class="nome-produto">Panela de pressão v2</span>
+                        <span class="valor">R$ 50,00</span>
+                    </div>
+               </div>
+               </div>
+           </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+       // $('section#tipos-em-alta').slick()
+    </script>
+</body>
+
+</html>

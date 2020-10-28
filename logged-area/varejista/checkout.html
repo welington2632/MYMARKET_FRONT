@@ -30,31 +30,29 @@
         </div>
     </header>
     <main>
-           <section id="pesquisa">
-               <h4>Comece pesquisando pelo tipo de produto que atende seu modelo de negócio!</h4>
+           <section id="checkout">
                <div>
-                <input type="text" placeholder="Pesquise o tipo do seu produto aqui!">
-                <script>
-                    function teste () {
-                        window.location = 'resultado.html'
-                    }
-                </script>
-               <i class="fas fa-search" onclick="teste()"></i>
+                   <h3>Detalhes do Pedido</h3>
+                   <div class="checkout-produtos">
+                       <div class="checkout-spot">
+                           <img src="../../img/cadeira.png" alt="cadeira">
+                           <div>
+                               <h3>Cadeira sintética de pano</h3>
+                               <span>Quantidade: 1</span>
+                           </div>
+                           <span id="lixo"></span>
+                       </div>
+                   </div>
                </div>
-               
-           </section>
-           <section id="tipos-em-alta">
-               <h4>
-                   Tipos em alta
-               </h4>
-               <ul>
-                   <li><a href="#">Teste</a></li>
-                   <li><a href="#">Teste 1</a></li>
-                   <li><a href="#">Teste 2</a></li>
-                   <li><a href="#">Teste 3</a></li>
-                   <li><a href="#">Teste 4</a></li>
-               </ul>
-
+               <div>
+                <h3>Finalize seu Pedido</h3>
+                <div class="informacoes-checkout">
+                    <span>TOTAL</span>
+                    <span id="total">R$ 50,00</span>
+                    <button id="finalizar-compra" value="">Finalizar Compra</button>
+                    <button id="continuar-comprando" value="">Continuar Compra</button>
+                </div>
+            </div>
            </section>
     </main>
     <footer>

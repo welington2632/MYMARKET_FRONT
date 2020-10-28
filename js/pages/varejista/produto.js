@@ -1,6 +1,3 @@
-import itemCompra from '../../model/itemCompra'
-import UserManager from '../../utils/UserManager'
-
 $(document).ready(function () {
 
 

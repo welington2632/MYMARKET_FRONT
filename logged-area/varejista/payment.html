@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <a href="./panel.html" id="logo"> <img src="../../img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <div class="right-infos">
+                <span class="perfil-infos">
+                    Bem vindo, <b>Welington</b>
+                  </span>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./panel.html">INICIO</a></li>
+            <li><a href="#">Relatórios</a></li>
+          </ul>
+        </div>
+    </header>
+    <main id="payment">
+        <div class="separador-horizontal">
+            <section class="payment" id="endereco">
+                <div>
+                 <h3>Dados de endereço</h3>
+                 <div class="informacoes-checkout">
+                     <input type="text" placeholder="CEP" id="cep">
+                     <input type="text" placeholder="Endereço" id="endereco">
+                     <div>
+                         <input type="text" placeholder="Número" id="numero">
+                         <input type="text" placeholder="Referência" id="referencia">
+                     </div>
+                     <div>
+                         <input type="text" placeholder="Cidade" id="cidade">
+                         <input type="text" placeholder="Estado" id="estado">
+                     </div>
+                 </div>
+             </div>
+            </section>
+            <section class="payment" id="pagamento">
+                <div>
+                 <h3>Dados de pagamento</h3>
+                 <div class="informacoes-checkout">
+                     <input type="text" placeholder="CEP" id="cep">
+                     <input type="text" placeholder="Endereço" id="endereco">
+                     <div>
+                         <input type="text" placeholder="Número" id="numero">
+                         <input type="text" placeholder="Referência" id="referencia">
+                     </div>
+                     <div>
+                         <input type="text" placeholder="Cidade" id="cidade">
+                         <input type="text" placeholder="Estado" id="estado">
+                     </div>
+                 </div>
+             </div>
+            </section>
+        </div>
+        <button id="finalizar-compra">Finalizar Compra</button>
+        <button id="voltar">Voltar</button>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+       // $('section#tipos-em-alta').slick()
+    </script>
+</body>
+
+</html>

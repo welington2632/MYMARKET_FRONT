@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="modal" id="produto-adicionado">
+        <div>
+            <h3>Produto adicionado ao carrinho com sucesso!</h3>
+            <input type="button" value="Ir para o carrinho" id="ir-carrinho">
+            <input type="button" value="Continuar Comprando" id="continuar-comprando">
+        </div>
+    </div>
+    <header>
+        <div class="head-container">
+            <a href="./panel.html" id="logo"> <img src="../../img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <div class="right-infos">
+                <span class="perfil-infos">
+                    Bem vindo, <b>Welington</b>
+                  </span>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./panel.html">INICIO</a></li>
+            <li><a href="#">Relatórios</a></li>
+          </ul>
+        </div>
+    </header>
+    <main>
+
+        <!-- TO DO : Breadcrumb -->
+
+        <section id="detalhes-produto">
+            <div class="imagem">
+                <img src="../../img/cadeira.png" alt="">
+            </div>
+            <div>
+                <h4>Cadeira sintética de pano</h4>
+                <span class="nome-vendedor">Vendedor: Empresa Gonçalves LTD</span>
+                <span class="endereco-vendedor">Av. Nações Unidas 1923, 23345123 Rio Grande do Sul</span>
+                <span id="valor">R$ 49,90</span>
+                <div class="quantidade">
+                    <span>Quantidade</span>
+                    <input type="number" name="quantidade" id="quantidade">
+                </div>
+                <button>Comprar</button>
+                <div class="frete">
+                    <span>Calcular frete</span>
+                    <div>
+                        <input type="text" name="calcular-frete" id="calcular-frete">
+                        <span>Calcular</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clientes-gostaram">
+            <h4>Os clientes também gostaram</h4>
+            <div>
+                <div class="produto-spot">
+                    <img src="../../img/cadeira.png" alt="">
+                    <div class="detalhes">
+                        <h4 class="titulo">Cadeira sintética de pano</h4>
+                        <span class="empresa">Empresa Gonçalvez LTD</span>
+                        <span class="endereco">Av. Nações Unidas, 1923 - 283283262 Rio Grande do Sul</span>
+                        <span class="valor">R$ 49,90 / unidade</span>
+                    </div>
+                </div>
+                <div class="produto-spot">
+                    <img src="../../img/cadeira.png" alt="">
+                    <div class="detalhes">
+                        <h4 class="titulo">Cadeira sintética de pano</h4>
+                        <span class="empresa">Empresa Gonçalvez LTD</span>
+                        <span class="endereco">Av. Nações Unidas, 1923 - 283283262 Rio Grande do Sul</span>
+                        <span class="valor">R$ 49,90 / unidade</span>
+                    </div>
+                </div>
+                <div class="produto-spot">
+                    <img src="../../img/cadeira.png" alt="">
+                    <div class="detalhes">
+                        <h4 class="titulo">Cadeira sintética de pano</h4>
+                        <span class="empresa">Empresa Gonçalvez LTD</span>
+                        <span class="endereco">Av. Nações Unidas, 1923 - 283283262 Rio Grande do Sul</span>
+                        <span class="valor">R$ 49,90 / unidade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="floating-panel">
+            <b>Forma de condução </b>
+            <select id="mode">
+              <option value="DRIVING">Carro</option>
+              <option value="WALKING">A pé</option>
+              <option value="BICYCLING">Bicicleta</option>
+            </select>
+          </div>
+          <div id="down-panel"></div>
+          <div id="map"></div>
+        <!-- TO DO : GOOGLE MAPS API INTEGRATION -->
+
+        
+
+        <section id="tipos-em-alta">
+            <h4>
+                Tipos em alta
+            </h4>
+            <ul>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste 1</a></li>
+                <li><a href="#">Teste 2</a></li>
+                <li><a href="#">Teste 3</a></li>
+                <li><a href="#">Teste 4</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+    </footer>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYVaZO785co_WJDUlWWOrp53nB4_Zx3Tc&callback=initMap"
+    type="text/javascript"></script>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/pages/varejista/detalhes-produto.js"></script>
+</body>
+
+</html>

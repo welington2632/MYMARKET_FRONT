@@ -1,4 +1,4 @@
-export default class UserManager {
+class UserManager {
 
     static getUsuarioLogado() {
         let usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
