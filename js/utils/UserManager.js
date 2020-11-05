@@ -2,13 +2,8 @@ class UserManager {
 
     static getUsuarioLogado() {
         let usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
-        console.log('retornando usuario logado : ' + usuarioLogado.id)
         return usuarioLogado;
     }
-
-    static exibirInfosUsuario() {
-        console.log(localStorage.getItem('usuarioLogado'));
-    } 
 
     static setUsuarioLogado(usuario) {
         //localStorage.setItem('usuarioLogado',usuario);
@@ -21,11 +16,13 @@ class UserManager {
         if (paginaPrivada){
             if (usuarioLogado == undefined) {
                 alert('Você precisa estar logado para acessar esta página!');
-                window.location.href = 'login.html';
+                window.history.back();
+
             } else {
-                if (!tiposPermitidos.include(usuarioLogado.tipo)) {
+                if (!tiposPermitidos.includes(usuarioLogado.tipo)) {
                     alert('Você não tem permissão para acessar esta página!')
-                    window.location.href = 'index.html';
+                    window.history.back();
+
                 }
             }
         }

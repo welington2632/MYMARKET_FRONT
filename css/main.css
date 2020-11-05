@@ -2,9 +2,19 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
-    height: 100vh;
     width: 100%;
     font-family: sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+input:focus {
+    outline: none;
+
 }
 
 .head-container {
@@ -44,12 +54,30 @@ img {
     font-weight: 600;
 }
 
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+main#register {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
 main {
-    height: 80%;
+    flex: 1;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    width: 80%; 
 }
 
 .description-container{
@@ -105,7 +133,6 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
     background-color: rgb(0, 153, 255);
     border-radius: 5px;
     width: 300px;
@@ -196,6 +223,17 @@ section p {
     border-bottom: 1px solid rgba(150, 145, 145, 0.363);
     background-color: rgba(150, 145, 145, 0);
     width: 100%;
-    font-size: 12px;
-    color: rgba(150, 145, 145, 1);
+    font-size: 14px;
+    color: rgba(150, 145, 145, 1)!important;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.button-login {
+    color: white;
+    background-color: #0099FF;
+    width: 25%;
+    font-style: normal;
+    padding: 25px;
+    margin: auto;
 }

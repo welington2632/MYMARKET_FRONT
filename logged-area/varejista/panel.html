@@ -6,8 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"/>
     <link rel="stylesheet" href="../css/panel.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+</head>
 
 <body>
     <header>
@@ -34,26 +38,26 @@
                <h4>Comece pesquisando pelo tipo de produto que atende seu modelo de negócio!</h4>
                <div>
                 <input type="text" placeholder="Pesquise o tipo do seu produto aqui!">
-                <script>
-                    function teste () {
-                        window.location = 'resultado.html'
-                    }
-                </script>
-               <i class="fas fa-search" onclick="teste()"></i>
+               <i class="fas fa-search"></i>
                </div>
                
            </section>
            <section id="tipos-em-alta">
                <h4>
-                   Tipos em alta
+                    Categorias em Alta
                </h4>
-               <ul>
-                   <li><a href="#">Teste</a></li>
-                   <li><a href="#">Teste 1</a></li>
-                   <li><a href="#">Teste 2</a></li>
-                   <li><a href="#">Teste 3</a></li>
-                   <li><a href="#">Teste 4</a></li>
-               </ul>
+               <div class="carousel-categorias">
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+                <div><a href="">teste</a></div>
+              </div>
 
            </section>
     </main>
@@ -62,7 +66,18 @@
             <p>MyMarket</p>
     </footer>
     <script src="../../js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <script src="../../js/utils/UserManager.js"></script>
+    <script src="../../js/utils/AutoComplete.js"></script>
+    <script src="../../js/varejista/verificacaoVarejo.js"></script>
+    <script src="../../js/varejista/controle-pesquisa.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
        // $('section#tipos-em-alta').slick()
     </script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="../css/varejista.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <a href="./panel.html" id="logo"> <img src="../../img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <div class="right-infos">
+                <span class="perfil-infos">
+                    Bem vindo, <b>Welington</b>
+                  </span>
+                  <a id="logout">| Sair</a>
+            </div>
+
+
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./panel.html">DASHBOARD</a></li>
+            <li><a href="./produtos.html" class="menu-active">GERENCIAR PRODUTOS</a></li>
+          </ul>
+        </div>
+    </header>
+    <main id="produto">
+        <h3>Produtos</h3>
+        <div class="horizontal-flex">
+           <a href="./cadastroProduto.html" class="cadastrar">Novo Produto</a>
+           <div class="listagem-produtos">
+               <!--<div class="produto">
+                   <img src="../../img/cadeira.png" alt="cadeira.png">
+                   <div class="infos-produto">
+                       <span class="sub" id="titulo">Panela de pressão v2</span>
+                       <span class="sub" id="valor">R$ 50,00</span>
+                       <span class="sub" id="categoria">Categoria: Panelas</span>
+                       <span class="sub" id="estoque">Estoque: 10</span>
+                   </div>
+                   <div class="control-buttons">
+                       <button id="editar">Editar</button>
+                       <button id="excluir">Excluir</button>
+                   </div>
+               </div>-->
+           </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../../js/utils/UserManager.js"></script>
+    <script src="../../js/atacadista/consultaProdutos.js"></script>
+    <script>
+       // $('section#tipos-em-alta').slick()
+    </script>
+</body>
+
+</html>

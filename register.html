@@ -13,7 +13,7 @@
 
 <body>
 
-    <head>
+    <header>
         <div class="head-container">
             <a href="index.html" id="logo"> <img src="./img/Logo.svg" alt="MyMarket_Logo">
             </a>
@@ -27,37 +27,81 @@
                 </ul>
             </nav>
         </div>
-    </head>
-    <main>
+    </header>
+    <main id="register">
         <h4 class="alpha">Alpha</h4>
         <div class="main-vertical">
+            <img src="./img/passo2.png" alt="passo2.png">
             <h1>Nos conte mais sobre você</h1>
             <form action="POST" class="cadastro-usuario">
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="txtNome">
+                <div>
+                    <div id="dados-pessoais" class="categoria-cadastro">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="txtNome" placeholder="Preencha seu nome aqui">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="txtEmail" placeholder="Preencha seu email aqui">
+                            <span id="aviso-email">Este email já está cadastrado na plataforma, por favor escolha outro</span>
+        
+                        </div>
+                        <div class="campo">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" name="cnpj" id="txtCNPJ" pattern="(/^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/)" placeholder="00.000.000/0000-00">
+                        </div>
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="txtSenha" placeholder="Preencha sua senha aqui">
+                        </div>
+                        <div class="campo">
+                            <label for="confirmar-senha">Confirme sua senha</label>
+                            <input type="password" name="confirmar-senha" id="txtSenha" placeholder="Digite novamente sua senha aqui">
+                        </div>
+                    </div>
+                    <div id="endereco" class="categoria-cadastro">
+                        <div class="campo">
+                            <label for="cep">CEP</label>
+                            <input type="text" name="cep" id="cep">
+                        </div>
+                        <div class="campo-dividido">
+                            <div class="campo" id="logradouro">
+                                <label for="logradouro">Logradouro</label>
+                                <input type="text" name="logradouro" id="logradouro">
+                            </div>
+                            <div class="campo" id="numero">
+                                <label for="numero">Número</label>
+                                <input type="number" name="numero" id="numero">
+                            </div>
+                        </div>
+                        <div class="campo-dividido">
+                            <div class="campo" id="uf">
+                                <label for="uf">UF</label>
+                                <select name="uf" id="uf">
+                                    <option value="" disabled selected>Selecione seu estado</option>
+                                </select>
+                            </div>
+                            <div class="campo" id="cidade">
+                                <label for="logradouro">Cidade</label>
+                                <select name="cidade" id="cidade">
+                                    <option value="" disabled selected>Selecione a sua cidade</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="campo" id="complemento">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" name="complemento" id="complemento">
+                        </div>
+
+                    </div>
                 </div>
-                <div class="campo">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="txtEmail">
-                </div>
-                <div class="campo">
-                    <label for="cnpj">CNPJ</label>
-                    <input type="text" name="cnpj" id="txtCNPJ">
-                </div>
-                <div class="campo">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="txtSenha">
-                </div>
-                <div class="campo">
-                    <label for="confirmar-senha">Confirme sua senha</label>
-                    <input type="password" name="confirmar-senha" id="txtSenha">
-                </div>
+               
+
                     <div class="button-submit">
                         <input type="submit" value="Próximo">
                     </div>
                     <div class="button-back">
-                        <input type="button" value="Voltar">
+                        <a href="./pre-register.html">Voltar</a>
                     </div>
             </form>
             <span id="ja-possui-conta">Você já possui uma conta? <a href="login.html">clique aqui!</a></span>
@@ -72,6 +116,7 @@
         </div>
     </footer>
     <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="./js/register.js"></script>
 </body>
 

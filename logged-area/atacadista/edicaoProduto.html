@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="../css/varejista.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <a href="./panel.html" id="logo"> <img src="../../img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <div class="right-infos">
+                <span class="perfil-infos">
+                    Bem vindo, <b>Welington</b>
+                  </span>
+                  <a id="logout">| Sair</a>
+            </div>
+
+
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./panel.html">DASHBOARD</a></li>
+            <li><a href="#" class="menu-active">GERENCIAR PRODUTOS</a></li>
+          </ul>
+        </div>
+    </header>
+    <main id="cadastroProduto">
+        <a href="./produtos.html" class="voltar"><i class="fas fa-arrow-left"></i></a>
+       <form action="#" method="post">
+           <div class="input-text max">
+               <label for="nome">Nome do produto</label>
+               <input type="text" name="nome" id="nome">
+           </div>
+           <div class="divisor-inputs">
+                <div class="input-text">
+                    <label for="valor">Valor</label>
+                    <input type="text" name="valor" id="valor">
+                </div>
+                <div class="input-text">
+                    <label for="quantidade_estoque">Quantidade em estoque</label>
+                    <input type="number" name="quantidade_estoque" id="quantidade_estoque">
+                </div>
+           </div>
+           <div class="divisor-inputs">
+            <div class="input-text">
+                <label for="subcategoria">Categoria</label>
+                <select name="subcategoria" id="subcategoria" required>
+                    <option value="" disabled selected>Selecione a categoria</option>
+                    <option value="Cadeira" >Cadeira</option>
+                </select>
+            </div>
+            <div class="input-text">
+                <label for="estoque">Ativo</label>
+                <input type="checkbox" name="ativo" id="ativo">
+            </div>
+
+           </div>
+
+        <div class="input-text max">
+            <label for="url_imagem">URL da imagem</label>
+            <input type="text" name="url_imagem" id="url_imagem">
+        </div>
+        <div class="input-text max">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea>
+        </div>
+        <button type="submit">Confirmar</button>
+        <a href="./panel.html" id="cancelar">Cancelar</a>
+       </form>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../../js//utils/FormJson.js"></script>
+    <script src="../../js/utils/UserManager.js"></script>
+    <script src="../../js/atacadista/edicaoProduto.js"></script>
+    <script>
+       // $('section#tipos-em-alta').slick()
+    </script>
+</body>
+
+</html>
